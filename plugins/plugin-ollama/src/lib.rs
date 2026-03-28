@@ -16,8 +16,8 @@ impl Default for OllamaConfig {
     fn default() -> Self {
         Self {
             enabled: true,
-            host: "http://localhost:11434".into(),
-            default_model: "codellama:13b".into(),
+            host: "http://10.100.21.22:11434".into(),
+            default_model: "qwen3:1.7b".into(),
         }
     }
 }
