@@ -1,0 +1,11 @@
+[package]
+name = "plugin-gemini"
+description = "Gemini CLI integration for Leuwi Panjang Terminal"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["process", "io-util"] }

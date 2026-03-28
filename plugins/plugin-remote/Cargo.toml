@@ -1,0 +1,16 @@
+[package]
+name = "plugin-remote"
+description = "Leuwi Panjang Remote Access — connect from mobile/laptop via WireGuard tunnel"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+axum = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+qrcode = "0.14"
+base64 = "0.22"
+rand = "0.8"
+x25519-dalek = { version = "2", features = ["static_secrets"] }
