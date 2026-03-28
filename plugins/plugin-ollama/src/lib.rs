@@ -16,8 +16,8 @@ impl Default for OllamaConfig {
     fn default() -> Self {
         Self {
             enabled: true,
-            host: "http://10.100.21.22:11434".into(),
-            default_model: "qwen3:1.7b".into(),
+            host: std::env::var("OLLAMA_HOST").unwrap_or_else(|_| "http://localhost:11434".into()),
+            default_model: std::env::var("OLLAMA_MODEL").unwrap_or_else(|_| "qwen3:1.7b".into()),
         }
     }
 }
